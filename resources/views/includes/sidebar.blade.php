@@ -26,7 +26,8 @@
                         <li><a href='{{route('skra.index')}}'><i class='pull-left glyphicon glyphicon-circle-arrow-right glyphicon-align-right'></i>&nbsp;&nbsp;&nbsp;<span>SKRAs</span></a></li>
                         <li><a href="{{route('skra_activities.index')}}"><i class='pull-left glyphicon glyphicon-circle-arrow-right'></i>&nbsp;&nbsp;&nbsp;<span>SKRA activities</span></a></li>
                     </ul>
-                </li>      
+                </li> 
+                <li><a href="#" class="tree-toggle nav-header"><i class="pull-left glyphicon glyphicon-list"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Athlete Information</span><span class="menu-collapsible-icon glyphicon glyphicon-chevron-right"></span></a>     
             </ul>
         </li>
     </ul>
