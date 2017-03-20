@@ -97,6 +97,7 @@ Route::delete('skra_activity/destroy/{id}',['as'=>'skra_activities.destroy','use
 Route::get('skra_activity/view', 'SKRA_activities_Controller@view')->name('view_skra_activities');
 Route::get('skra_activity/{id}/edit',['as'=>'skra_activities.edit','uses'=>'SKRA_activities_Controller@edit']);
 
-
+//routes for althlete information
+Route::get('athlete_bio',['as'=>'athlete.create','uses'=>'AthleteInformationController@create']);
 //routes for training information
 Route::get('training',['as'=>'training.index','uses'=>'TrainingInformationController@index']);
