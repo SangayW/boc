@@ -77,10 +77,10 @@
               </table>
               <input type="hidden" name="hidden_view" id="hidden_view" value="{{url('advisory/view')}}">
               <div class='form-group'>
-                <div class="col-xs-11 col-xs-offset-7 input-group" style='margin-top:20px'>
+                <div class="col-xs-12 input-group" style='margin-top:20px'>
                   {{-- <a href="{{route('advisory_board_members.create')}}" class="btn btn-default col-xs-2 glyphicon glyphicon-plus">Add</a> --}}
-                  <a class='btn btn-success glyphicon glyphicon-plus col-xs-offset-1' data-toggle='modal' data-target="#addModal">Add</a> 
-                  <a href="{{route('sport_organization.index')}}" class='btn btn-default col-xs-offset-2 glyphicon glyphicon-remove'>Cancel</a>
+                  <a class='btn btn-success glyphicon glyphicon-plus col-xs-offset-10' data-toggle='modal' data-target="#addModal">Add</a> 
+                  <a href="{{route('sport_organization.index')}}" class='btn btn-default pull-right'>Finish</a>
                 </div>
               </div>
             </div>

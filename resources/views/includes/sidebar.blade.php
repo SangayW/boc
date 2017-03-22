@@ -27,7 +27,16 @@
                         <li><a href="{{route('skra_activities.index')}}"><i class='pull-left glyphicon glyphicon-circle-arrow-right'></i>&nbsp;&nbsp;&nbsp;<span>SKRA activities</span></a></li>
                     </ul>
                 </li> 
-                <li><a href="#" class="tree-toggle nav-header"><i class="pull-left glyphicon glyphicon-list"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Athlete Information</span><span class="menu-collapsible-icon glyphicon glyphicon-chevron-right"></span></a>     
+                 <li><a href="#" class="tree-toggle nav-header"><i class="pull-left glyphicon glyphicon-list"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Athlete Information</span><span class="menu-collapsible-icon glyphicon glyphicon-chevron-right"></span></a>
+                    <ul class="nav nav-list tree bullets">
+                        <li><a href="{{route('athlete.create')}}"><i class='pull-left glyphicon glyphicon-circle-arrow-right'></i>&nbsp;&nbsp;&nbsp;<span>Athlete Info</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="tree-toggle nav-header"><i class="pull-left glyphicon glyphicon-list"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Training Information</span><span class="menu-collapsible-icon glyphicon glyphicon-chevron-right"></span></a>
+                    <ul class="nav nav-list tree bullets">
+                        <li><a href="{{route('training.index')}}"><i class='pull-left glyphicon glyphicon-circle-arrow-right'></i>&nbsp;&nbsp;&nbsp;<span>Training Info</span></a></li>
+                    </ul>
+                </li>      
             </ul>
         </li>
     </ul>
@@ -43,6 +52,4 @@
     $(function(){
         $('.tree-toggle').parent().children('ul.tree').toggle(200);
     });
-
-
 </script>

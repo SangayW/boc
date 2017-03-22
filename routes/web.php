@@ -99,5 +99,9 @@ Route::get('skra_activity/{id}/edit',['as'=>'skra_activities.edit','uses'=>'SKRA
 
 //routes for althlete information
 Route::get('athlete_bio',['as'=>'athlete.create','uses'=>'AthleteInformationController@create']);
+
 //routes for training information
 Route::get('training',['as'=>'training.index','uses'=>'TrainingInformationController@index']);
+Route::get('training/create',['as'=>'training.create','uses'=>'TrainingInformationController@create']);
+Route::get('training/attendance',['as'=>'training.attendance','uses'=>'TrainingInformationController@trainingAttendanceIndex']);
+Route::post('training/store',['as'=>'training.store','uses'=>'TrainingInformationController@store']);

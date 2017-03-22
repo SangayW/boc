@@ -23,7 +23,12 @@ class TrainingInformationController extends Controller
      */
     public function create()
     {
-        //
+        return view('training_information.create');
+    }
+    
+    public function trainingAttendanceIndex()
+    {
+        return view('training_information.attendance');
     }
 
     /**
@@ -34,20 +39,10 @@ class TrainingInformationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('training_information.create');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
+   
     /**
      * Show the form for editing the specified resource.
      *
